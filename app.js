@@ -58,7 +58,7 @@ function onDeviceReady() {
     document.getElementById('isKnownDevice').innerHTML = isKnownDevice(navigator.platform);
     document.getElementById('appVersion').innerHTML    = app.version;
     if (isCordovaApp()) {
-        window.addEventListener("batterystatus", onBatteryStatus, false);
-        document.getElementById('batteryEvent').innerHTML = batteryStuff;
+        window.addEventListener('batterystatus', onBatteryStatus, false);
+        document.getElementById('batteryEvent').innerHTML = "Battery Event Listener Loaded";
     }
 }
